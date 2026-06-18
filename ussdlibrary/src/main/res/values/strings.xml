@@ -1,4 +1,0 @@
-<resources>
-    <string name="app_name">UssdLibrary</string>
-    <string name="ussd_accessibility_description">Allows the app to read and respond to USSD dialogs automatically, so USSD codes can run in the background even when the screen is locked.</string>
-</resources>
