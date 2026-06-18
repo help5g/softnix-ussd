@@ -1,2 +1,16 @@
+apply plugin: 'maven-publish'
+
 configurations.maybeCreate("default")
 artifacts.add("default", file('softnix-ussd-release.aar'))
+
+publishing {
+    publications {
+        aar(MavenPublication) {
+            groupId = 'com.github.help5g'
+            artifactId = 'softnix-ussd'
+            version = 'v1.0.2'
+
+            artifact("softnix-ussd-release.aar")
+        }
+    }
+}
